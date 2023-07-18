@@ -34,7 +34,7 @@ let calculator = Calculator()
 let num1 = 5.0
 let num2 = 3.0
 
-print("\(num1) + \(num2) = \(calculator.add(num1,num2))")
+print("\(num1) + \(num2) = \(calculator.substruct(num1,num2))")
 print("\(num1) - \(num2) = \(calculator.substract(num1,num2))")
 print("\(num1) * \(num2) = \(calculator.multiply(num1,num2))")
 print("\(num1) / \(num2) = \(calculator.divide(num1,num2))")
