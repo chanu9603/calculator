@@ -6,10 +6,15 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXFileReference section */
+		EB4A3D412A66A3C600FCD813 /* calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		EB4A3D392A66A11A00FCD813 = {
 			isa = PBXGroup;
 			children = (
+				EB4A3D412A66A3C600FCD813 /* calculator.swift */,
 			);
 			sourceTree = "<group>";
 		};
