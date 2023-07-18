@@ -40,4 +40,4 @@ print("\(num1) * \(num2) = \(calculator.multiply(num1,num2))")
 print("\(num1) / \(num2) = \(calculator.divide(num1,num2))")
 print("\(num1)을 \(num2)로 나눈 나머지는 \(calculator.remain(num1,num2))")
 
-print("나한테 왜그래")
+print("나한테 왜그래!!")
