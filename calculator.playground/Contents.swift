@@ -1,28 +1,65 @@
-import UIKit
+class AddOperation{
+    func addNum(_ a: Double, _ b: Double) -> Double{
+        return a + b
+    }
+}
 
-var greeting = "Hello, playground"
+class SubtractOperation{
+    func substractNum(_ a: Double, _ b: Double) -> Double{
+        return a - b
+    }
+}
+
+class MultiplyOperation{
+    func multiplyNum(_ a:Double, _ b:Double) -> Double{
+        return a * b
+    }
+}
+
+class DivideOperation{
+    func divideNum(_ a:Double, _ b:Double) -> Double{
+        return a / b
+    }
+
+}
 
 
 class Calculator{
+    let add = AddOperation()
+    
     func add(_ a: Double, _ b:Double) -> Double{
-        return a + b
-        }
+        return add.addNum(a, b)
+    }
+    
+    
+    let substract = SubtractOperation()
+    
     func substract(_ a: Double, _ b:Double) -> Double{
-        return a - b
-        }
-    func multiply(_ a: Double, _ b:Double) -> Double{
-        return a * b
-        }
-    func divide(_ a: Double, _ b:Double) -> Double{
-        if b == 0 {
-            print("0으로 나눌 수 없습니다.")
-        }
-        return a / b
-        }
+        return substract.substractNum(a, b)
+    }
+    
+    
+    let multiply = MultiplyOperation()
+    
+    func multiply(_ a:Double, _ b:Double) -> Double{
+        return multiply.multiplyNum(a,b)
+    }
+    
+    
+    let divide = DivideOperation()
+    
+    func divide (_ a:Double, _ b:Double) -> Double{
+        return divide.divideNum(a, b)
+        //        if b == 0 {
+        //            print("0으로 나눌 수 없습니다.")
+        //        }
+    }
+    
+    
     func remain(_ a : Double, _ b : Double) -> Double {
         return a.truncatingRemainder(dividingBy: b)
-        }
     }
+}
 
 let calculator = Calculator()
 
