@@ -49,10 +49,10 @@ class Calculator{
     let divide = DivideOperation()
     
     func divide (_ a:Double, _ b:Double) -> Double{
+        if b == 0 {
+            print("0으로 나눌 수 없습니다.")
+        }
         return divide.divideNum(a, b)
-        //        if b == 0 {
-        //            print("0으로 나눌 수 없습니다.")
-        //        }
     }
     
     
@@ -65,7 +65,7 @@ let calculator = Calculator()
 
 // 계산하고싶은 숫자 넣는 곳
 let num1 = 5.0
-let num2 = 3.0
+let num2 = 2.0
 
 print("\(num1) + \(num2) = \(calculator.add(num1,num2))")
 print("\(num1) - \(num2) = \(calculator.substract(num1,num2))")
