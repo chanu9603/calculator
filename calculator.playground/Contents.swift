@@ -1,11 +1,7 @@
-//
-//  calculator.swift
-//  calculator
-//
-//  Created by t2023-m0054 on 2023/07/18.
-//
+import UIKit
 
-import Foundation
+var greeting = "Hello, playground"
+
 
 class Calculator{
     func add(_ a: Double, _ b:Double) -> Double{
