@@ -72,3 +72,9 @@ print("\(num1) - \(num2) = \(calculator.substract(num1,num2))")
 print("\(num1) * \(num2) = \(calculator.multiply(num1,num2))")
 print("\(num1) / \(num2) = \(calculator.divide(num1,num2))")
 print("\(num1)을 \(num2)로 나눈 나머지는 \(calculator.remain(num1,num2))")
+
+/*
+연산 클래스와 calculator 클래스를 분리함으로써 생길 수 있는 이점을 생각해 보았다.
+기존 코드에서는 calculator class안에 모든 기능이 들어가 있어 클래스내에 문제가 생겼을 때 보수가 어려울 수 있다.
+그러나 각각의 함수를 다른 클래스 안에 정의하면, 책임이 그 클래스 안에만 한정되기 때문에 수정이 용이하다.
+*/
